@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+//import org.openqa.selenium.support.ui.Select;
 
 public class PruebaSelenium {
 
@@ -57,13 +57,50 @@ public class PruebaSelenium {
 		
 		//TIPO Dropdown filtros tipo dentro de uan tienda para ordenar productos
 		driver.manage().window().maximize();//Maximizar la ventana del navegador
-		Select drpdwnProdSelect = new Select(driver.findElement(By.className("product_sort_container")));
-		drpdwnProdSelect.selectByVisibleText("Price (low to high)");
+		//Select drpdwnProdSelect = new Select(driver.findElement(By.className("product_sort_container")));
+		//drpdwnProdSelect.selectByVisibleText("Price (low to high)");
 		//drpdwnProdSelect.selectByValue("lohi");
 		
+		WebElement addBtnSlb = driver.findElement(By.xpath("//button[@data-test='add-to-cart-sauce-labs-backpack']"));
+	
+		addBtnSlb.click();
+		Thread.sleep(1000); 
+		
+		WebElement carBtn = driver.findElement(By.className("shopping_cart_link"));
+		carBtn.click();
+		Thread.sleep(1000);
+		
+		WebElement checkBtn = driver.findElement(By.name("checkout"));
+		checkBtn.click();
+		Thread.sleep(1000);
+		
+		WebElement firstName = driver.findElement(By.name("firstName"));
+		firstName.sendKeys("Patricio");
+		Thread.sleep(1000);
+		
+		WebElement lastName = driver.findElement(By.name("lastName"));
+		lastName.sendKeys("Rodriguez");
+		Thread.sleep(1000);
+		
+		WebElement zipCode = driver.findElement(By.name("postalCode"));
+		zipCode.sendKeys("222");
+		Thread.sleep(1000);
+		
+		WebElement continueBtn = driver.findElement(By.id("continue"));
+		continueBtn.click();
+		Thread.sleep(1000);
+		
+		WebElement finishBtn = driver.findElement(By.id("finish"));
+		finishBtn.click();
+		Thread.sleep(1000);
+		
+		boolean completeTitle = driver.findElement(By.className("complete-header")).isDisplayed();
+		if(completeTitle) {
+			System.out.println("La orden se logro completar correctamente");
+		}
 		//Cerrar Navegador web
-		driver.close(); //cierra ventana actual
-		driver.quit(); //cierra todas las ventanas
+		//driver.close(); //cierra ventana actual
+		//driver.quit(); //cierra todas las ventanas
 	}
 
 }
