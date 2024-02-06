@@ -16,4 +16,7 @@ public class WrapClass {
 		return webelementUI.getText();
 	}
 	
+	public static boolean verifyElementDisplayed(WebElement webelementUI) {
+	return webelementUI.isDisplayed();
+	}
 }
