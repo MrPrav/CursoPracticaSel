@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-06T01:23:55Z" name="Default suite" finished-at="2024-02-06T01:23:56Z" duration-ms="962">
+  <suite started-at="2024-02-21T01:56:37Z" name="Default suite" finished-at="2024-02-21T01:56:38Z" duration-ms="993">
     <groups>
     </groups>
-    <test started-at="2024-02-06T01:23:55Z" name="Default test" finished-at="2024-02-06T01:23:56Z" duration-ms="962">
-      <class name="inventoryTests.TC03_VerifyRemoveBtn">
-        <test-method is-config="true" signature="startWebPage()[pri:0, instance:inventoryTests.TC03_VerifyRemoveBtn@6ceb7b5e]" started-at="2024-02-05T19:23:55Z" name="startWebPage" finished-at="2024-02-05T19:23:56Z" duration-ms="603" status="PASS">
+    <test started-at="2024-02-21T01:56:37Z" name="Default test" finished-at="2024-02-21T01:56:38Z" duration-ms="993">
+      <class name="loginTest.TC04_LoginJson">
+        <test-method is-config="true" signature="startWebPage()[pri:0, instance:loginTest.TC04_LoginJson@1bcf67e8]" started-at="2024-02-20T19:56:37Z" name="startWebPage" finished-at="2024-02-20T19:56:37Z" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebPage -->
-        <test-method signature="TC03()[pri:0, instance:inventoryTests.TC03_VerifyRemoveBtn@6ceb7b5e]" started-at="2024-02-05T19:23:56Z" name="TC03" finished-at="2024-02-05T19:23:56Z" duration-ms="348" status="PASS">
+        <test-method signature="TC01()[pri:0, instance:loginTest.TC04_LoginJson@1bcf67e8]" started-at="2024-02-20T19:56:37Z" name="TC01" finished-at="2024-02-20T19:56:38Z" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC03 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:inventoryTests.TC03_VerifyRemoveBtn@6ceb7b5e]" started-at="2024-02-05T19:23:56Z" name="closeDriver" finished-at="2024-02-05T19:23:56Z" duration-ms="0" status="PASS">
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTest.TC04_LoginJson@1bcf67e8]" started-at="2024-02-20T19:56:38Z" name="closeDriver" finished-at="2024-02-20T19:56:38Z" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- inventoryTests.TC03_VerifyRemoveBtn -->
+      </class> <!-- loginTest.TC04_LoginJson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
